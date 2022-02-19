@@ -1,0 +1,161 @@
+/*ПЛАВНЫЙ СКРОЛ НО ЛУЧШЕ JAVASCRIPT ИСПОЛЬЗУВАТЬ,ЭТО СВОЙСТВО МАЛО ЕЩЕ ЧЕМ ПОДДЕРЖИВАЕТСЯ(НАПРИМЕР САФАРИ ЕГО НЕ ЛЮБИТ)
+/*001*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*001*/
+body {
+  background-image: url("../img/backimg.jpg");
+  font-family: "Yaldevi", sans-serif; /*СЕМЕЙСТВО ШРИФТОВ*/
+}
+
+/*010*/
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* ТОП 10 РЕЦЕПТОВ  */
+/*001*/
+img {
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/*ПРИ НАВЕДЕНИИ НА КАРТИНКУ ПОД ---ТОП 10 РЕЦЕПТОВ */
+img:hover {
+  transform: scale(1.1);
+}
+
+/*001*/
+h1 {
+  color: black;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/*010*/
+.header__img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+/*010*/
+.navmenu {
+  background-image: url("../img/bgtopnav.png");
+  overflow: hidden;
+  height: 50px;
+}
+
+/*011*/
+.navmenu li {
+  float: left;
+}
+
+/*011*/
+.navmenu a {
+  display: block;
+  padding: 6px;
+  color: white;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 29px;
+}
+
+/*010*/
+.main__heading {
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+/*001*/
+h2 {
+  font-size: 28px;
+  color: orange;
+  margin: 14px 0;
+  font-weight: 500;
+}
+
+/*010*/
+.main_content {
+  text-align: center;
+  line-height: 25px;
+}
+
+/*001*/
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*010*/
+.first__resipe_instruction {
+  font-size: 20px;
+  color: #555557;
+  font-weight: bold;
+}
+
+/* КЛАС ДЛЯ ВСЕХ КАРТИНОК ПОДРОБНОЙ ИНСТРУКЦИИ ПРИГОТОВЛЕНИЯ */
+/*010*/
+.first__resipe_instruction_photo {
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin-left: 145px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/* КЛАС ДЛЯ ВСЕХ КАРТИНОК ПОДРОБНОЙ ИНСТРУКЦИИ ПРИГОТОВЛЕНИЯ--ХОВЕР ЭФФЕКТ ДЛЯ НИХ */
+.first__resipe_instruction_photo:hover {
+  transform: scale(1.2);
+}
+
+/*010*/
+.clear {
+  clear: both; /*ОТМЕНА ОБТЕКАНИЯ ДЛЯ ТОГО ЧТО БЫ ФЛОАТ ЛЕФТ СЕБЯ ХОРОШО ЧУВСТВОВАЛ*/
+}
+
+.first__resipe_instruction_text {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: inherit;
+}
+
+/*001*/
+footer {
+  color: gray;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+/* КНОПКА НАВЕРХ */
+/* 010 */
+.top__arrow {
+  width: 80px;
+  border: 2px solid #ccc;
+  background: black;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+/* КНОПКА НАВЕРХ */
+/* 011 */
+.top__arrow a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
